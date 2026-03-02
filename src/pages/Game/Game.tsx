@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ScorePanel from "./components/ScorePanel";
 import JokerBar from "./components/JokerBar";
 import ConsumablesBar from "./components/ConsumablesBar";
@@ -36,6 +37,19 @@ export default function Game() {
       <div className="flex flex-col items-center bg-[#0d0018] border-t border-[#3a2060]">
         <HandArea />
         <ActionButtons />
+        <Link
+          to="/shop"
+          style={{
+            color: "#5a4070",
+            fontSize: 7,
+            fontFamily: "'Press Start 2P', monospace",
+            marginTop: 4,
+            marginBottom: 8,
+          }}
+          className="hover:text-[#a080d0] transition-colors"
+        >
+          End Round →
+        </Link>
       </div>
     </div>
   );

@@ -20,8 +20,8 @@ export default function PlayArea() {
         PLAYED CARDS
       </p>
       <div className="flex gap-3 items-center">
-        {PLAYED_CARDS.map((card, i) => (
-          <Card key={i} rank={card.rank} suit={card.suit} />
+        {PLAYED_CARDS.map((card) => (
+          <Card key={`${card.rank}${card.suit}`} rank={card.rank} suit={card.suit} />
         ))}
       </div>
     </div>

@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# AI agent tooling
+.claude/
+.entire/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

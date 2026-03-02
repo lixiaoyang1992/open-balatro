@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function MainMenu() {
   return (
     <div
-      className="w-full h-full flex flex-col items-center justify-center gap-8"
+      className="relative w-full h-full flex flex-col items-center justify-center gap-8"
       style={{
         background:
           "radial-gradient(ellipse at center, #3a0a5e 0%, #1a0a2e 60%, #0d0018 100%)",

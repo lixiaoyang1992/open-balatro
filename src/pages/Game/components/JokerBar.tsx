@@ -1,5 +1,6 @@
 import JokerCard from "../../../components/JokerCard";
 
+// TODO: replace with game state
 const MOCK_JOKERS = [
   { name: "Joker" },
   { name: "Greedy Joker" },
@@ -12,11 +13,11 @@ export default function JokerBar() {
   return (
     <div className="flex items-center gap-3 flex-1">
       <p
+        className="mr-2"
         style={{
           color: "#a080d0",
           fontSize: 8,
           fontFamily: "'Press Start 2P', monospace",
-          marginRight: 8,
         }}
       >
         JOKERS
@@ -24,9 +25,9 @@ export default function JokerBar() {
       {Array.from({ length: TOTAL_SLOTS }).map((_, i) => {
         const joker = MOCK_JOKERS[i];
         return joker ? (
-          <JokerCard key={i} name={joker.name} />
+          <JokerCard key={joker.name} name={joker.name} />
         ) : (
-          <JokerCard key={i} empty />
+          <JokerCard key={`empty-slot-${i}`} empty />
         );
       })}
     </div>

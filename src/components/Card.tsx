@@ -1,5 +1,7 @@
+type Rank = "A" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "J" | "Q" | "K";
+
 interface CardProps {
-  rank: string;
+  rank: Rank;
   suit: "♠" | "♥" | "♦" | "♣";
   faceDown?: boolean;
   selected?: boolean;
@@ -60,7 +62,7 @@ export default function Card({
       {/* Center suit */}
       <div
         className="flex items-center justify-center"
-        style={{ color: suitColor, fontSize: small ? 20 : 28 }}
+        style={{ color: suitColor, fontSize: small ? 20 : 28, fontFamily: "monospace" }}
       >
         {suit}
       </div>

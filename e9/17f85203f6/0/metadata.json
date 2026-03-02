@@ -1,0 +1,30 @@
+{
+  "cli_version": "0.4.7",
+  "checkpoint_id": "e917f85203f6",
+  "session_id": "20c9a4fa-f25f-419e-8df7-290b4439058a",
+  "strategy": "manual-commit",
+  "created_at": "2026-03-02T06:48:14.376272299Z",
+  "branch": "main",
+  "checkpoints_count": 0,
+  "files_touched": [
+    "docs/plans/2026-03-02-balatro-static-ui-design.md"
+  ],
+  "agent": "Claude Code",
+  "turn_id": "9f2f501c6051",
+  "token_usage": {
+    "input_tokens": 155,
+    "cache_creation_tokens": 43038,
+    "cache_read_tokens": 427577,
+    "output_tokens": 7041,
+    "api_call_count": 18
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-03-02T06:48:14.327232583Z",
+    "agent_lines": 171,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 171,
+    "agent_percentage": 100
+  }
+}

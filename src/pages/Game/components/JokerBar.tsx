@@ -17,7 +17,6 @@ export default function JokerBar() {
         style={{
           color: "#a080d0",
           fontSize: 8,
-          fontFamily: "'Press Start 2P', monospace",
         }}
       >
         JOKERS

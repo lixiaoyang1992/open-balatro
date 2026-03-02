@@ -10,7 +10,6 @@ function InfoPill({ label, value }: InfoPillProps) {
         style={{
           color: "#a080d0",
           fontSize: 7,
-          fontFamily: "'Press Start 2P', monospace",
         }}
       >
         {label}
@@ -19,7 +18,6 @@ function InfoPill({ label, value }: InfoPillProps) {
         style={{
           color: "#ffffff",
           fontSize: 16,
-          fontFamily: "'Press Start 2P', monospace",
         }}
       >
         {value}

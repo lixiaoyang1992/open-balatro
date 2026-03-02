@@ -21,7 +21,6 @@ export default function JokerCard({ name, empty = false }: JokerCardProps) {
       {name && (
         <span
           className="text-[7px] text-[#f5c842] text-center leading-tight line-clamp-2"
-          style={{ fontFamily: "'Press Start 2P', monospace" }}
         >
           {name}
         </span>

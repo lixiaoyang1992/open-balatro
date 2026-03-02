@@ -42,7 +42,6 @@ export default function Game() {
           style={{
             color: "#5a4070",
             fontSize: 7,
-            fontFamily: "'Press Start 2P', monospace",
             marginTop: 4,
             marginBottom: 8,
           }}

@@ -7,7 +7,6 @@ export default function ConsumablesBar() {
         style={{
           color: "#a080d0",
           fontSize: 7,
-          fontFamily: "'Press Start 2P', monospace",
         }}
       >
         CONSUMABLES

@@ -48,7 +48,6 @@ export default function ShopSlot({
           style={{
             color,
             fontSize: 7,
-            fontFamily: "'Press Start 2P', monospace",
             textAlign: "center",
             lineHeight: 1.5,
           }}
@@ -59,7 +58,6 @@ export default function ShopSlot({
           style={{
             color: "#5a4070",
             fontSize: 6,
-            fontFamily: "'Press Start 2P', monospace",
             textTransform: "uppercase",
           }}
         >
@@ -74,7 +72,6 @@ export default function ShopSlot({
           style={{
             color: "#f5c842",
             fontSize: 10,
-            fontFamily: "'Press Start 2P', monospace",
           }}
         >
           ${price ?? 0}
@@ -83,7 +80,7 @@ export default function ShopSlot({
       <button
         type="button"
         className="px-4 py-1 rounded border border-[#3a8060] bg-[#0a2010] text-[#60d090] hover:bg-[#1a4020] transition-colors"
-        style={{ fontSize: 8, fontFamily: "'Press Start 2P', monospace" }}
+        style={{ fontSize: 8 }}
       >
         Buy
       </button>

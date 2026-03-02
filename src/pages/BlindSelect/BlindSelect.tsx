@@ -55,7 +55,6 @@ export default function BlindSelect() {
           style={{
             color: "#a080d0",
             fontSize: 9,
-            fontFamily: "'Press Start 2P', monospace",
           }}
         >
           ANTE 1 / 8
@@ -64,7 +63,6 @@ export default function BlindSelect() {
           style={{
             color: "#f5c842",
             fontSize: 20,
-            fontFamily: "'Press Start 2P', monospace",
           }}
         >
           Select Blind
@@ -82,7 +80,7 @@ export default function BlindSelect() {
       <Link
         to="/"
         className="absolute bottom-8 left-8 text-[#5a4070] hover:text-[#a080d0]"
-        style={{ fontSize: 9, fontFamily: "'Press Start 2P', monospace" }}
+        style={{ fontSize: 9 }}
       >
         ← Back
       </Link>
@@ -115,7 +113,6 @@ function BlindCard({ blind }: { blind: Blind }) {
         style={{
           color: blind.color,
           fontSize: 10,
-          fontFamily: "'Press Start 2P', monospace",
           textAlign: "center",
         }}
       >
@@ -128,7 +125,6 @@ function BlindCard({ blind }: { blind: Blind }) {
           style={{
             color: "#a080d0",
             fontSize: 8,
-            fontFamily: "'Press Start 2P', monospace",
           }}
         >
           Score at least
@@ -137,7 +133,6 @@ function BlindCard({ blind }: { blind: Blind }) {
           style={{
             color: "#ffffff",
             fontSize: 16,
-            fontFamily: "'Press Start 2P', monospace",
           }}
         >
           {blind.target.toLocaleString()}
@@ -150,7 +145,6 @@ function BlindCard({ blind }: { blind: Blind }) {
           style={{
             color: "#e07070",
             fontSize: 7,
-            fontFamily: "'Press Start 2P', monospace",
             textAlign: "center",
             lineHeight: 1.6,
           }}
@@ -165,7 +159,6 @@ function BlindCard({ blind }: { blind: Blind }) {
           style={{
             fontSize: 8,
             color: "#a080d0",
-            fontFamily: "'Press Start 2P', monospace",
           }}
         >
           Reward:
@@ -174,7 +167,6 @@ function BlindCard({ blind }: { blind: Blind }) {
           style={{
             fontSize: 10,
             color: "#f5c842",
-            fontFamily: "'Press Start 2P', monospace",
           }}
         >
           ${blind.reward}
@@ -189,7 +181,6 @@ function BlindCard({ blind }: { blind: Blind }) {
           borderColor: blind.color,
           color: blind.color,
           fontSize: 9,
-          fontFamily: "'Press Start 2P', monospace",
         }}
       >
         Select
@@ -197,16 +188,14 @@ function BlindCard({ blind }: { blind: Blind }) {
 
       {/* Skip (non-boss only) */}
       {!blind.boss && (
-        <button
+        <span
           style={{
-            color: "#5a4070",
+            color: "#3a2048",
             fontSize: 8,
-            fontFamily: "'Press Start 2P', monospace",
           }}
-          className="hover:text-[#a080d0] transition-colors"
         >
           Skip →
-        </button>
+        </span>
       )}
     </div>
   );

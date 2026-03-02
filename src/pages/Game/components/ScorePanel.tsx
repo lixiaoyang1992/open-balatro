@@ -27,7 +27,6 @@ export default function ScorePanel({
           style={{
             color: "#a080d0",
             fontSize: 7,
-            fontFamily: "'Press Start 2P', monospace",
           }}
         >
           BLIND
@@ -36,7 +35,6 @@ export default function ScorePanel({
           style={{
             color: "#f5c842",
             fontSize: 9,
-            fontFamily: "'Press Start 2P', monospace",
             textAlign: "center",
           }}
         >
@@ -52,7 +50,6 @@ export default function ScorePanel({
           style={{
             color: "#a080d0",
             fontSize: 7,
-            fontFamily: "'Press Start 2P', monospace",
           }}
         >
           SCORE AT LEAST
@@ -61,7 +58,6 @@ export default function ScorePanel({
           style={{
             color: "#ffffff",
             fontSize: 14,
-            fontFamily: "'Press Start 2P', monospace",
           }}
         >
           {scoreTarget}
@@ -77,7 +73,6 @@ export default function ScorePanel({
           style={{
             color: "#a080d0",
             fontSize: 7,
-            fontFamily: "'Press Start 2P', monospace",
           }}
         >
           ROUND SCORE
@@ -86,7 +81,6 @@ export default function ScorePanel({
           style={{
             color: "#f5c842",
             fontSize: 20,
-            fontFamily: "'Press Start 2P', monospace",
           }}
         >
           {currentScore}
@@ -102,7 +96,6 @@ export default function ScorePanel({
           style={{
             color: "#f5c842",
             fontSize: 14,
-            fontFamily: "'Press Start 2P', monospace",
           }}
         >
           ${coins}
@@ -115,7 +108,6 @@ export default function ScorePanel({
           style={{
             color: "#5a4070",
             fontSize: 7,
-            fontFamily: "'Press Start 2P', monospace",
           }}
         >
           ANTE {ante}/{totalAntes}
@@ -124,7 +116,6 @@ export default function ScorePanel({
           style={{
             color: "#5a4070",
             fontSize: 7,
-            fontFamily: "'Press Start 2P', monospace",
           }}
         >
           ROUND {round}

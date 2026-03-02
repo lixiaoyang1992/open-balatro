@@ -9,4 +9,5 @@ export const router = createBrowserRouter([
   { path: "/blind-select", element: <BlindSelect /> },
   { path: "/game", element: <Game /> },
   { path: "/shop", element: <Shop /> },
+  { path: "*", element: <MainMenu /> },
 ]);

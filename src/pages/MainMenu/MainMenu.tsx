@@ -15,7 +15,6 @@ export default function MainMenu() {
           className="text-[64px] glow-gold"
           style={{
             color: "#f5c842",
-            fontFamily: "'Press Start 2P', monospace",
             letterSpacing: "0.05em",
           }}
         >
@@ -25,7 +24,6 @@ export default function MainMenu() {
           style={{
             color: "#a080d0",
             fontSize: 10,
-            fontFamily: "'Press Start 2P', monospace",
           }}
         >
           open-source web edition
@@ -45,7 +43,6 @@ export default function MainMenu() {
         style={{
           color: "#5a4070",
           fontSize: 8,
-          fontFamily: "'Press Start 2P', monospace",
         }}
       >
         v0.0.1-dev
@@ -75,7 +72,7 @@ function MenuButton({
             : "border-[#5a3090] text-[#a080d0] bg-[#1a0a2e]"
         }
       `}
-      style={{ fontSize: 12, fontFamily: "'Press Start 2P', monospace" }}
+      style={{ fontSize: 12 }}
     >
       {label}
     </Link>

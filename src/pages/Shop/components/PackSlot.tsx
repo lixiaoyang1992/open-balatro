@@ -13,7 +13,6 @@ export default function PackSlot({ name, price, description }: PackSlotProps) {
           style={{
             color: "#c0a0f0",
             fontSize: 7,
-            fontFamily: "'Press Start 2P', monospace",
             textAlign: "center",
           }}
         >
@@ -24,7 +23,6 @@ export default function PackSlot({ name, price, description }: PackSlotProps) {
         style={{
           color: "#8060a0",
           fontSize: 6,
-          fontFamily: "'Press Start 2P', monospace",
           textAlign: "center",
           maxWidth: 100,
           lineHeight: 1.5,
@@ -37,7 +35,6 @@ export default function PackSlot({ name, price, description }: PackSlotProps) {
           style={{
             color: "#f5c842",
             fontSize: 9,
-            fontFamily: "'Press Start 2P', monospace",
           }}
         >
           ${price}
@@ -45,7 +42,7 @@ export default function PackSlot({ name, price, description }: PackSlotProps) {
         <button
           type="button"
           className="px-3 py-1 rounded border border-[#3a8060] bg-[#0a2010] text-[#60d090] hover:bg-[#1a4020] transition-colors"
-          style={{ fontSize: 7, fontFamily: "'Press Start 2P', monospace" }}
+          style={{ fontSize: 7 }}
         >
           Buy
         </button>

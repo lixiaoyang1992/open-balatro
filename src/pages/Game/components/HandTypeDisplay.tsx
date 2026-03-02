@@ -5,7 +5,6 @@ export default function HandTypeDisplay() {
         style={{
           color: "#a080d0",
           fontSize: 7,
-          fontFamily: "'Press Start 2P', monospace",
         }}
       >
         HAND
@@ -14,7 +13,6 @@ export default function HandTypeDisplay() {
         style={{
           color: "#f5c842",
           fontSize: 11,
-          fontFamily: "'Press Start 2P', monospace",
           textAlign: "center",
           lineHeight: 1.5,
         }}
@@ -27,7 +25,6 @@ export default function HandTypeDisplay() {
             style={{
               color: "#a080d0",
               fontSize: 7,
-              fontFamily: "'Press Start 2P', monospace",
             }}
           >
             ×
@@ -36,7 +33,6 @@ export default function HandTypeDisplay() {
             style={{
               color: "#ffffff",
               fontSize: 12,
-              fontFamily: "'Press Start 2P', monospace",
             }}
           >
             30
@@ -45,7 +41,6 @@ export default function HandTypeDisplay() {
             style={{
               color: "#5a4070",
               fontSize: 6,
-              fontFamily: "'Press Start 2P', monospace",
             }}
           >
             chips
@@ -55,7 +50,6 @@ export default function HandTypeDisplay() {
           style={{
             color: "#f5c842",
             fontSize: 16,
-            fontFamily: "'Press Start 2P', monospace",
             alignSelf: "center",
           }}
         >
@@ -66,7 +60,6 @@ export default function HandTypeDisplay() {
             style={{
               color: "#a080d0",
               fontSize: 7,
-              fontFamily: "'Press Start 2P', monospace",
             }}
           >
             ×
@@ -75,7 +68,6 @@ export default function HandTypeDisplay() {
             style={{
               color: "#f5c842",
               fontSize: 12,
-              fontFamily: "'Press Start 2P', monospace",
             }}
           >
             3
@@ -84,7 +76,6 @@ export default function HandTypeDisplay() {
             style={{
               color: "#5a4070",
               fontSize: 6,
-              fontFamily: "'Press Start 2P', monospace",
             }}
           >
             mult

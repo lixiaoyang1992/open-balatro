@@ -14,7 +14,6 @@ export default function PlayArea() {
         style={{
           color: "#5a4070",
           fontSize: 7,
-          fontFamily: "'Press Start 2P', monospace",
         }}
       >
         PLAYED CARDS

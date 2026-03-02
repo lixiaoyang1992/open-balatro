@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import ShopSlot from "./components/ShopSlot";
 import PackSlot from "./components/PackSlot";
 
+const MOCK_COINS = 4;
+
 export default function Shop() {
   return (
     <div className="w-full h-full flex flex-col bg-[#1a0a2e]">
@@ -11,7 +13,6 @@ export default function Shop() {
           style={{
             color: "#f5c842",
             fontSize: 18,
-            fontFamily: "'Press Start 2P', monospace",
           }}
         >
           SHOP
@@ -22,10 +23,9 @@ export default function Shop() {
             style={{
               color: "#f5c842",
               fontSize: 18,
-              fontFamily: "'Press Start 2P', monospace",
             }}
           >
-            $4
+            ${MOCK_COINS}
           </span>
         </div>
       </div>
@@ -38,7 +38,6 @@ export default function Shop() {
             style={{
               color: "#a080d0",
               fontSize: 8,
-              fontFamily: "'Press Start 2P', monospace",
             }}
           >
             FOR SALE
@@ -60,7 +59,6 @@ export default function Shop() {
             style={{
               color: "#a080d0",
               fontSize: 8,
-              fontFamily: "'Press Start 2P', monospace",
             }}
           >
             BOOSTER PACKS
@@ -87,7 +85,6 @@ export default function Shop() {
           style={{
             color: "#5a4070",
             fontSize: 8,
-            fontFamily: "'Press Start 2P', monospace",
           }}
           className="hover:text-[#a080d0] transition-colors"
         >
@@ -96,7 +93,7 @@ export default function Shop() {
         <Link
           to="/blind-select"
           className="px-8 py-3 rounded border-2 border-[#f5c842] bg-[#2a1a00] text-[#f5c842] hover:bg-[#3a2800] transition-colors"
-          style={{ fontSize: 10, fontFamily: "'Press Start 2P', monospace" }}
+          style={{ fontSize: 10 }}
         >
           Next Round →
         </Link>

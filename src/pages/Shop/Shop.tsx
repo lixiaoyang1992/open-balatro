@@ -4,7 +4,7 @@ import PackSlot from "./components/PackSlot";
 
 export default function Shop() {
   return (
-    <div className="w-full h-full flex flex-col" style={{ background: "#1a0a2e" }}>
+    <div className="w-full h-full flex flex-col bg-[#1a0a2e]">
       {/* Header */}
       <div className="flex items-center justify-between px-8 py-4 bg-[#0d0018] border-b border-[#3a2060]">
         <h2
@@ -55,7 +55,7 @@ export default function Shop() {
         <div className="w-px bg-[#3a2060]" />
 
         {/* Right: Booster Packs */}
-        <div className="flex flex-col gap-4" style={{ minWidth: 240 }}>
+        <div className="flex flex-col gap-4 min-w-[240px]">
           <p
             style={{
               color: "#a080d0",

@@ -1,17 +1,19 @@
+type SlotType = "joker" | "tarot" | "planet";
+
 interface ShopSlotProps {
-  name: string;
-  type: "joker" | "tarot" | "planet";
-  price: number;
+  name?: string;
+  type?: SlotType;
+  price?: number;
   empty?: boolean;
 }
 
-const TYPE_COLORS: Record<string, string> = {
+const TYPE_COLORS: Record<SlotType, string> = {
   joker: "#f5c842",
   tarot: "#c080f0",
   planet: "#40c0f0",
 };
 
-const TYPE_ICONS: Record<string, string> = {
+const TYPE_ICONS: Record<SlotType, string> = {
   joker: "🃏",
   tarot: "🔮",
   planet: "🪐",
@@ -32,7 +34,8 @@ export default function ShopSlot({
     );
   }
 
-  const color = TYPE_COLORS[type];
+  const resolvedType = type ?? "joker";
+  const color = TYPE_COLORS[resolvedType];
 
   return (
     <div className="flex flex-col items-center gap-2">
@@ -40,7 +43,7 @@ export default function ShopSlot({
         className="w-[90px] h-[120px] rounded-lg border-2 flex flex-col items-center justify-center gap-2 p-2"
         style={{ borderColor: color, backgroundColor: "#1e0a38" }}
       >
-        <span style={{ fontSize: 32 }}>{TYPE_ICONS[type]}</span>
+        <span style={{ fontSize: 32 }}>{TYPE_ICONS[resolvedType]}</span>
         <span
           style={{
             color,
@@ -60,7 +63,7 @@ export default function ShopSlot({
             textTransform: "uppercase",
           }}
         >
-          {type}
+          {resolvedType}
         </span>
       </div>
       <div
@@ -74,7 +77,7 @@ export default function ShopSlot({
             fontFamily: "'Press Start 2P', monospace",
           }}
         >
-          ${price}
+          ${price ?? 0}
         </span>
       </div>
       <button

@@ -4,6 +4,8 @@ import ConsumablesBar from "./components/ConsumablesBar";
 import PlayArea from "./components/PlayArea";
 import HandTypeDisplay from "./components/HandTypeDisplay";
 import RoundInfo from "./components/RoundInfo";
+import HandArea from "./components/HandArea";
+import ActionButtons from "./components/ActionButtons";
 
 export default function Game() {
   return (
@@ -31,29 +33,9 @@ export default function Game() {
       </div>
 
       {/* Bottom: Hand + Action buttons */}
-      <div className="flex flex-col items-center px-4 pb-3 bg-[#0d0018] border-t border-[#3a2060]">
-        <div className="flex items-center justify-center h-[120px]">
-          <span
-            style={{
-              color: "#5a4070",
-              fontSize: 9,
-              fontFamily: "'Press Start 2P', monospace",
-            }}
-          >
-            [HandArea — Task 10]
-          </span>
-        </div>
-        <div className="flex gap-8">
-          <span
-            style={{
-              color: "#5a4070",
-              fontSize: 9,
-              fontFamily: "'Press Start 2P', monospace",
-            }}
-          >
-            [ActionButtons — Task 10]
-          </span>
-        </div>
+      <div className="flex flex-col items-center bg-[#0d0018] border-t border-[#3a2060]">
+        <HandArea />
+        <ActionButtons />
       </div>
     </div>
   );

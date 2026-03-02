@@ -1,6 +1,9 @@
 import ScorePanel from "./components/ScorePanel";
 import JokerBar from "./components/JokerBar";
 import ConsumablesBar from "./components/ConsumablesBar";
+import PlayArea from "./components/PlayArea";
+import HandTypeDisplay from "./components/HandTypeDisplay";
+import RoundInfo from "./components/RoundInfo";
 
 export default function Game() {
   return (
@@ -16,32 +19,14 @@ export default function Game() {
         <ScorePanel />
 
         {/* Play Area */}
-        <div className="flex-1 flex flex-col items-center justify-center rounded-lg border border-[#3a2060] bg-[#150828]">
-          <span
-            style={{
-              color: "#5a4070",
-              fontSize: 9,
-              fontFamily: "'Press Start 2P', monospace",
-            }}
-          >
-            [PlayArea — Task 9]
-          </span>
-        </div>
+        <PlayArea />
 
         {/* Right: HandType + RoundInfo */}
         <div
           className="flex flex-col items-center justify-between rounded-lg border border-[#3a2060] bg-[#150828] p-4 w-[160px]"
         >
-          <span
-            style={{
-              color: "#5a4070",
-              fontSize: 9,
-              fontFamily: "'Press Start 2P', monospace",
-              textAlign: "center",
-            }}
-          >
-            [HandType + RoundInfo — Task 9]
-          </span>
+          <HandTypeDisplay />
+          <RoundInfo />
         </div>
       </div>
 

@@ -1,0 +1,42 @@
+{
+  "cli_version": "0.4.7",
+  "checkpoint_id": "ca2b280e5a97",
+  "session_id": "20c9a4fa-f25f-419e-8df7-290b4439058a",
+  "strategy": "manual-commit",
+  "created_at": "2026-03-02T06:56:09.964753022Z",
+  "branch": "main",
+  "checkpoints_count": 0,
+  "files_touched": [
+    "index.html",
+    "src/App.tsx",
+    "src/index.css",
+    ".entire/.gitignore",
+    ".entire/settings.json",
+    "docs/plans/2026-03-02-balatro-static-ui-design.md",
+    "package-lock.json",
+    "package.json",
+    "src/App.css",
+    ".claude/settings.json",
+    "docs/plans/2026-03-02-balatro-static-ui-implementation.md"
+  ],
+  "agent": "Claude Code",
+  "turn_id": "18d3732adeba",
+  "checkpoint_transcript_start": 84,
+  "transcript_lines_at_start": 84,
+  "token_usage": {
+    "input_tokens": 67,
+    "cache_creation_tokens": 177387,
+    "cache_read_tokens": 411262,
+    "output_tokens": 2663,
+    "api_call_count": 8
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-03-02T06:56:09.830272064Z",
+    "agent_lines": 958,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 958,
+    "agent_percentage": 100
+  }
+}

@@ -1,19 +1,31 @@
 import ScorePanel from "./components/ScorePanel";
+import JokerBar from "./components/JokerBar";
 
 export default function Game() {
   return (
     <div className="w-full h-full flex flex-col bg-[#1a0a2e]">
       {/* Top bar: Joker slots + consumables */}
-      <div className="flex items-center px-4 py-2 bg-[#0d0018] border-b border-[#3a2060] h-[100px]">
-        <span
-          style={{
-            color: "#5a4070",
-            fontSize: 9,
-            fontFamily: "'Press Start 2P', monospace",
-          }}
-        >
-          [JokerBar — Task 8]
-        </span>
+      <div className="flex items-center justify-between px-4 py-2 bg-[#0d0018] border-b border-[#3a2060] h-[100px]">
+        <JokerBar />
+        <div className="flex flex-col items-end gap-1">
+          <p
+            style={{
+              color: "#a080d0",
+              fontSize: 7,
+              fontFamily: "'Press Start 2P', monospace",
+            }}
+          >
+            CONSUMABLES
+          </p>
+          <div className="flex gap-2">
+            <div className="w-[52px] h-[52px] rounded border border-dashed border-[#3a2060] flex items-center justify-center">
+              <span style={{ color: "#3a2060", fontSize: 18 }}>+</span>
+            </div>
+            <div className="w-[52px] h-[52px] rounded border border-dashed border-[#3a2060] flex items-center justify-center">
+              <span style={{ color: "#3a2060", fontSize: 18 }}>+</span>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Middle: ScorePanel + PlayArea + RoundInfo */}

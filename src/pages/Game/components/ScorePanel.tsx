@@ -1,8 +1,25 @@
-export default function ScorePanel() {
+interface ScorePanelProps {
+  blindName?: string;
+  scoreTarget?: number;
+  currentScore?: number;
+  coins?: number;
+  ante?: number;
+  totalAntes?: number;
+  round?: number;
+}
+
+export default function ScorePanel({
+  blindName = "Small Blind",
+  scoreTarget = 300,
+  currentScore = 0,
+  coins = 4,
+  ante = 1,
+  totalAntes = 8,
+  round = 1,
+}: ScorePanelProps) {
   return (
     <div
-      className="flex flex-col items-center gap-3 p-4 rounded-lg border border-[#3a2060] bg-[#150828]"
-      style={{ width: 180, height: "100%" }}
+      className="flex flex-col items-center gap-3 p-4 rounded-lg border border-[#3a2060] bg-[#150828] h-full w-[180px]"
     >
       {/* Blind name */}
       <div className="flex flex-col items-center gap-1">
@@ -23,7 +40,7 @@ export default function ScorePanel() {
             textAlign: "center",
           }}
         >
-          Small Blind
+          {blindName}
         </p>
       </div>
 
@@ -47,7 +64,7 @@ export default function ScorePanel() {
             fontFamily: "'Press Start 2P', monospace",
           }}
         >
-          300
+          {scoreTarget}
         </p>
       </div>
 
@@ -72,7 +89,7 @@ export default function ScorePanel() {
             fontFamily: "'Press Start 2P', monospace",
           }}
         >
-          0
+          {currentScore}
         </p>
       </div>
 
@@ -88,7 +105,7 @@ export default function ScorePanel() {
             fontFamily: "'Press Start 2P', monospace",
           }}
         >
-          $4
+          ${coins}
         </span>
       </div>
 
@@ -101,7 +118,7 @@ export default function ScorePanel() {
             fontFamily: "'Press Start 2P', monospace",
           }}
         >
-          ANTE 1/8
+          ANTE {ante}/{totalAntes}
         </p>
         <p
           style={{
@@ -110,7 +127,7 @@ export default function ScorePanel() {
             fontFamily: "'Press Start 2P', monospace",
           }}
         >
-          ROUND 1
+          ROUND {round}
         </p>
       </div>
     </div>

@@ -35,8 +35,7 @@ export default function Game() {
 
         {/* Right: HandType + RoundInfo */}
         <div
-          className="flex flex-col items-center justify-between rounded-lg border border-[#3a2060] bg-[#150828] p-4"
-          style={{ width: 160 }}
+          className="flex flex-col items-center justify-between rounded-lg border border-[#3a2060] bg-[#150828] p-4 w-[160px]"
         >
           <span
             style={{

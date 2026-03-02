@@ -1,6 +1,16 @@
 import { Link } from "react-router-dom";
 
-const BLINDS = [
+interface Blind {
+  id: string;
+  name: string;
+  target: number;
+  reward: number;
+  description: string;
+  color: string;
+  boss: boolean;
+}
+
+const BLINDS: Blind[] = [
   {
     id: "small",
     name: "Small Blind",
@@ -80,7 +90,7 @@ export default function BlindSelect() {
   );
 }
 
-function BlindCard({ blind }: { blind: (typeof BLINDS)[0] }) {
+function BlindCard({ blind }: { blind: Blind }) {
   return (
     <div
       className={`flex flex-col items-center gap-4 p-6 rounded-xl border-2 w-[220px] ${blind.boss ? "glow-red" : ""}`}

@@ -13,24 +13,24 @@ Build a static visual replica of the Balatro card game UI using React + Vite + T
 
 ## Tech Stack
 
-| Layer | Choice |
-|-------|--------|
-| Framework | React 19 + TypeScript |
-| Build | Vite 8 |
-| Styling | TailwindCSS v4 |
-| Routing | React Router v7 |
+| Layer       | Choice                                   |
+| ----------- | ---------------------------------------- |
+| Framework   | React 19 + TypeScript                    |
+| Build       | Vite 8                                   |
+| Styling     | TailwindCSS v4                           |
+| Routing     | React Router v7                          |
 | Card assets | CSS-drawn (Unicode suit symbols) for now |
 
 ---
 
 ## Routes
 
-| Path | Screen |
-|------|--------|
-| `/` | Main Menu |
+| Path            | Screen          |
+| --------------- | --------------- |
+| `/`             | Main Menu       |
 | `/blind-select` | Blind Selection |
-| `/game` | Main Game |
-| `/shop` | Shop |
+| `/game`         | Main Game       |
+| `/shop`         | Shop            |
 
 Navigation between screens via `<Link>` components (no programmatic routing in static phase).
 
@@ -71,17 +71,17 @@ src/
 
 ## Visual Specification
 
-| Element | Value |
-|---------|-------|
-| Background | `#1a0a2e` (deep purple-black) |
-| Primary text | White / off-white |
-| Font | `Press Start 2P` (Google Fonts, pixel style) |
-| Accent color | `#f5c842` (gold) |
-| Danger / Boss | `#e03030` (red) |
-| Buttons | Dark bg + gold border |
-| Viewport | Fixed 1280×720, centered |
-| Playing card size | ~70×98px in hand area |
-| Joker card size | ~80×80px, gold border |
+| Element           | Value                                        |
+| ----------------- | -------------------------------------------- |
+| Background        | `#1a0a2e` (deep purple-black)                |
+| Primary text      | White / off-white                            |
+| Font              | `Press Start 2P` (Google Fonts, pixel style) |
+| Accent color      | `#f5c842` (gold)                             |
+| Danger / Boss     | `#e03030` (red)                              |
+| Buttons           | Dark bg + gold border                        |
+| Viewport          | Fixed 1280×720, centered                     |
+| Playing card size | ~70×98px in hand area                        |
+| Joker card size   | ~80×80px, gold border                        |
 
 ---
 
@@ -133,29 +133,31 @@ src/
 
 All data is hardcoded in each page component.
 
-| Data | Value |
-|------|-------|
-| Hand cards | A♠ K♥ Q♦ J♣ 10♠ 9♥ 8♦ 7♣ |
-| Jokers | Joker / Greedy Joker / Wrathful Joker (3 slots filled, 2 empty) |
-| Score target | 300 |
-| Current score | 0 |
-| Hands remaining | 4 |
-| Discards remaining | 3 |
-| Coins | $4 |
-| Shop items | Scary Face (joker, $6), Death (tarot, $3) |
-| Booster packs | Arcana Pack ($4), Standard Pack ($4) |
+| Data               | Value                                                           |
+| ------------------ | --------------------------------------------------------------- |
+| Hand cards         | A♠ K♥ Q♦ J♣ 10♠ 9♥ 8♦ 7♣                                        |
+| Jokers             | Joker / Greedy Joker / Wrathful Joker (3 slots filled, 2 empty) |
+| Score target       | 300                                                             |
+| Current score      | 0                                                               |
+| Hands remaining    | 4                                                               |
+| Discards remaining | 3                                                               |
+| Coins              | $4                                                              |
+| Shop items         | Scary Face (joker, $6), Death (tarot, $3)                       |
+| Booster packs      | Arcana Pack ($4), Standard Pack ($4)                            |
 
 ---
 
 ## Card Component Design
 
 Playing cards are drawn purely with CSS and Unicode:
+
 - White background, rounded corners, colored suit symbol
 - Red suits (♥♦) in red, black suits (♠♣) in dark
 - Rank in top-left and bottom-right corners
 - Back side: dark purple with pattern
 
 Joker cards use a dark colored placeholder block with:
+
 - Gold border
 - Name text centered
 - Fixed square dimensions

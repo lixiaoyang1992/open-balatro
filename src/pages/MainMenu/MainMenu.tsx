@@ -35,6 +35,7 @@ export default function MainMenu() {
         <MenuButton to="/blind-select" label="New Run" primary />
         <MenuButton to="/game" label="Continue" />
         <MenuButton to="/" label="Options" />
+        <MenuButton to="/settings" label="Settings" />
       </div>
 
       {/* Version */}
